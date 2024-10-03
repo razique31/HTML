@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .photo-showcase {
+            display: flex;
+            justify-content:center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .photo-item {
+            text-align: center;
+            max-width: 300px;
+            margin-right: 100px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        caption {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        blockquote {
+            font-style: italic;
+            color: #555;
+            margin-top: 10px;
+        }
+        h1{
+           text-align: center;
+           margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Photo Showcase</h1>
+
+    <div class="photo-showcase">
+        <div class="photo-item">
+            <img src="https://media.istockphoto.com/id/620951116/photo/panoramic-view-of-colorful-sunrise-in-mountains.jpg?s=612x612&w=0&k=20&c=6IO5LBwLVSBPxQD4L5NlrxRkygeocjA5OKg8iKqvT58=" alt="Photo 1">
+            <caption>Mountain Sunrise</caption>
+            <blockquote>
+                "The mountains are calling, and I must go."
+                <br>
+                <strong>John Muir</strong>
+            </blockquote>
+        </div>
+        <div class="photo-item">
+            <img src="https://media.istockphoto.com/id/1093514364/photo/fireworks-display-at-town-square-of-dubai-downtown.jpg?s=612x612&w=0&k=20&c=JoJVzc-wULDsNS4FZ1iSMzK7nc4lp5PS9X6oCw6m3mE=" alt="Photo 2">
+            <caption>City Lights</caption>
+            <blockquote>
+                "It’s not the destination, it’s the journey."
+                <br>
+                <strong><em>Ralph Waldo Emerson</em></strong>
+            </blockquote>
+        </div>
+        <div class="photo-item">
+            <img src="https://media.istockphoto.com/id/1373240601/photo/close-up-detail-of-powerful-teal-blue-wave-breaking-in-open-ocean-on-a-bright-sunny-afternoon.jpg?s=612x612&w=0&k=20&c=cUJcskTkxlVujRex2R_A0_zwoZ4Pve2L1qcOXy-lwIs=" alt="Photo 3">
+            <caption>Ocean Waves</caption>
+            <blockquote>
+                "The cure for anything is salt water: sweat, tears, or the sea."
+                <br>
+                <strong>Isak Dinesen</strong>
+            </blockquote>
+        </div>
+    </div>
+
+</body>
+</html>
