@@ -1,0 +1,19 @@
+/* Set body background color */
+body {
+    background-color:bisque;
+}
+
+/* Style h5 heading */
+h5 {
+    color: #8a2be2;
+    font-size: 20px;
+    font-style: italic;
+    text-align: left;
+}
+
+/* Style paragraphs with the 'content' class */
+.content {
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.5;
+}

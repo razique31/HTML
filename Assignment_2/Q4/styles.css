@@ -1,0 +1,15 @@
+/* Styling the div with initial background image */
+.backimage {
+    width: 800px;
+    height: 400px;
+    background-image: url("https://i.postimg.cc/0yT2yTWd/dark-nature-sunset-wallpaper-800x480-120990-12.jpg"); /* Initial background image */
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease; /* Smooth transition */
+    margin: 20px auto;
+}
+
+/* Change background image on hover */
+.backimage:hover {
+    background-image: url("https://i.postimg.cc/DwJwFvgw/desktop-wallpaper-firewatch-day-night-cycle.jpg"); /* Background image on hover */
+}

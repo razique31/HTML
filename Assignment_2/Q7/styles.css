@@ -1,0 +1,52 @@
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling the menu bar */
+.menu-bar {
+    position: fixed; /* Fix the menu to the left */
+    left: 0; /* Position it to the left side */
+    top: 0; /* Start at the top */
+    width: 200px; /* Fixed width */
+    height: 100%; /* Full height */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 15px; /* Padding around the content */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Styling the menu list */
+.menu-bar ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+.menu-bar li {
+    margin: 15px 0; /* Spacing between items */
+}
+
+.menu-bar a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+}
+
+/* Change color on hover */
+.menu-bar a:hover {
+    color: #FFD700; /* Change color on hover */
+}
+
+/* Styling the content area */
+.content {
+    margin-left: 220px; /* Space for the menu */
+    padding: 20px; /* Padding for content */
+}
+
+/* Simulated long content */
+.long-content {
+    height: 1500px; /* Long height to create scrollbar */
+    background: linear-gradient(to bottom, #f4f4f4, #e0e0e0); /* Gradient background */
+}

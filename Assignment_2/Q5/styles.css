@@ -1,0 +1,19 @@
+/* General styling for the unordered list */
+.custom-list {
+    font-family: sans-serif; /* Use a sans-serif font family */
+    list-style-position: outside;
+    padding-left: 40px; /* Adjust to align text with the marker */
+}
+
+/* Customize the list marker image size and position */
+.custom-list li {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/57713a8e2994cae381dd86fe/1510405002757-FP2W9HV8ZA0HP2IF3O6A/SOA-PNG.png"); /* Replace with SOA logo image URL */
+    background-size: 30px 30px; /* Adjust size of the logo */
+    background-repeat: no-repeat;
+    background-position:  7px; /* Adjust to vertically align the logo with the text */
+    padding-left: 50px; /* Adjust to align the text after the logo */
+    padding-bottom: 12px;
+    padding-top: 12px;
+    margin-bottom: 20px;
+   
+}

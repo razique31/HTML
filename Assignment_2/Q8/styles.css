@@ -1,0 +1,71 @@
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Background image */
+    background-repeat: repeat-x; /* Horizontal repetition */
+    background-size: cover; /* Cover the background */
+}
+
+/* Sticky Navigation Bar */
+.navbar {
+    position: sticky; /* Sticky positioning */
+    top: 0; /* Stick to the top */
+    background-color: rgba(76, 175, 80, 0.9); /* Semi-transparent green */
+    padding: 15px; /* Padding for navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    z-index: 1000; /* Ensure it stays above content */
+}
+
+.navbar ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Horizontal layout */
+}
+
+.navbar li {
+    margin-right: 20px; /* Space between items */
+}
+
+.navbar a {
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Padding for links */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+/* Hover effect */
+.navbar a:hover {
+    background-color: rgba(255, 193, 7, 0.8); /* Light yellow on hover */
+}
+
+/* Main content styling */
+.content {
+    padding: 20px; /* Padding for content */
+    margin-top: 80px; /* Space for the sticky navbar */
+}
+
+/* Encircled image styling */
+.image-container {
+    display: flex; /* Center the image */
+    justify-content: center; /* Center horizontally */
+    margin: 20px 0; /* Margin above and below */
+}
+
+.image-container img {
+    width: 300px; /* Set width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border: 5px solid #007bff; /* Blue border */
+    outline: 10px solid #ff5722; /* Orange outline */
+    border-radius: 50%; /* Make it circular */
+}
+
+/* Simulated long content */
+.long-content {
+    height: 1500px; /* Long height to create scrollbar */
+    /* background: linear-gradient(to bottom, #f4f4f4, #e0e0e0); Gradient background */
+    background-image: url("https://i.scdn.co/image/ab67616d0000b273897f73256b9128a9d70eaf66");
+}

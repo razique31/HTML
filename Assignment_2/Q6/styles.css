@@ -1,0 +1,46 @@
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+}
+/* Styling the table */
+.styled-table {
+    border-collapse: collapse; /* Collapse borders */
+    width: 100%; /* Full width */
+    height: auto; /* Auto height based on content */
+    margin: 20px 0; /* Space above and below */
+}
+
+/* Table headers */
+.styled-table th {
+    background-color: #4CAF50; /* Green background for header */
+    color: white; /* White text */
+    padding: 10px; /* Padding inside cells */
+    text-align: left; /* Align text to the left */
+}
+
+/* Table cells */
+.styled-table td {
+    border: 1px solid #ddd; /* Light gray border */
+    padding: 10px; /* Padding inside cells */
+}
+
+/* Background color for specified rows */
+.styled-table tr:nth-child(1),
+.styled-table tr:nth-child(4),
+.styled-table tr:nth-child(7),
+.styled-table tr:nth-child(10),
+.styled-table tr:nth-child(3n + 1) { /* Every third row starting from the 1st */
+    background-color: #e0f7fa; /* Light blue background */
+}
+
+/* Hover effect for table rows */
+.styled-table tr:hover {
+    background-color: #d1e7dd; /* Light green hover effect */
+}
