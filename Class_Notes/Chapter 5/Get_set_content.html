@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+        <html>
+		    <head>
+             <title>jquery DOM Manipulation</title>
+			 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+			 </script>
+			 <script>
+			 $(document).ready(function(){
+			 $("#btn1").click(function(){
+			  alert("Text: "+$("#par").text());
+			 });
+			 $("#btn2").click(function(){
+			  alert("HTML: "+$("#par").html());
+			 });
+			 $("#btn3").click(function(){
+			  alert("Value: "+$("#sname").val());
+			 });
+			 $("#btn4").click(function(){
+			        $("#par").text("Hi User");
+			 });
+			 $("#btn5").click(function(){
+			         $("#par").html("<b>Hi User</b>");
+			 });
+			 $("#btn6").click(function(){
+			        $("#sname").val("Kumar");
+			 });
+			 });
+			 </script>
+			 </head>
+			 <body>
+			 <p id="par">This is a paragraph <b> contains bold text </b></p>
+			 <p><label for="sname">Student Name:</label></p>
+			 <input type="text" id="sname" name="std_name" value="Mayur"></P>
+			 
+			 <button id="btn1">Dispaly Text </button><br>
+			 <button id="btn2">Display HTML</button><br>
+			 <button id="btn3">Dispaly Value </button><br>
+			 
+			 <button id="btn4">Setting Text </button><br>
+			 <button id="btn5">Setting HTML</button><br>
+			 <button id="btn6">Setting Value </button><br>
+			 </body>
+			 </html>

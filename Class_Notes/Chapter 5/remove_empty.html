@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+        <html>
+		    <head>
+             <title>Jquery deletion of elements</title>
+			 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+			 </script>
+			 <script>
+			 $(document).ready(function(){
+			   $("#b1").click(function(){
+			     $("#d").remove();
+			      			   
+			   });
+			   $("#b2").click(function(){
+			     $("#d").empty();
+			      			   
+			   });
+			   $("#b3").click(function(){
+			     $("p").remove(".par");
+			      			   
+			   });
+			 });
+			 </script>
+			   <style>
+			     #d{
+				 height:200px;
+				 width:500px;
+				 border:3px solid green;
+				 background-color:orange;
+				 </style>
+			 </head>
+			 <body>
+			 <div id="d">
+			     We are using div element
+				 <p class="par"> First paragraph </p>
+				 <p class="par"> Second paragraph </p>
+			      <p> Third paragraph without class </p>
+				  </div> <br>
+			   <button id="b1">Remove</button>
+			   <button id="b2">empty</button> 
+			   <button id="b3">Specific deletion</button> 
+			 </body>
+			 </html>

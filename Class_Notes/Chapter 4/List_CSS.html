@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+<title> List styling using CSS</title>
+<style>
+.c1{list-style-type:circle;}
+.c2{list-style-type:square;}
+.c3{list-style:none;
+    background-image:url("iter.png");
+    padding: 10px 30px;
+	background-repeat:no-repeat;
+	background-position:left center;
+	background-size: 15px;}
+.c4{list-style-type:upper-alpha;}
+.c5{list-style-type:decimal-leading-zero;}
+//.c6{list-style-image:url("iter.png");}
+</style>
+</head>
+<body>
+<h2> Unordered list using CSS </h2>
+<ul class="c1">
+   <li>Unordered item1 </li>
+   <li> Unordered item2 </li>
+   <li>Unordered item3 </li>
+ </ul>
+ <ul class="c2">
+   <li>Unordered item4 </li>
+   <li> Unordered item5 </li>
+   <li>Unordered item6 </li>
+ </ul>
+ <ol>
+    <li class="c3"> Ordered item1 </li>
+	<li class="c3"> Ordered item2 </li>
+	<li class="c3"> Ordered item3 </li>
+ </ol>
+ <ol class="c4" start="5">
+    <li> Ordered item4 </li>
+	<li> Ordered item5 </li>
+	<li> Ordered item6 </li>
+ </ol>
+ <ol class="c5" start="5">
+    <li> Ordered item7 </li>
+	<li> Ordered item8 </li>
+	<li> Ordered item9 </li>
+ </ol>
+ <ol class="c6">
+    <li> Ordered item10 </li>
+	<li> Ordered item11</li>
+	<li> Ordered item12</li>
+ </ol>
+</body>
+</html>

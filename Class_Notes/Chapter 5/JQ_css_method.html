@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+        <html>
+		    <head>
+             <title>Jquery CSS</title>
+			 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+			 </script>
+			 <style>
+			    #p1{
+				  background-color:blue;
+				  color:red;
+				  }
+				#p2{
+				  background-color:orange;
+				  }
+				#p3{
+				  background-color:yellow;
+				  }
+			 </style>
+			 <script>
+			    $(document).ready(function(){
+				    $("#b1").click(function(){
+					  alert($("#p1").css("background-color"));
+					  alert($("#p2").css("background-color"));
+					  alert($("#p3").css("background-color"));
+					});
+					 $("#b2").click(function(){
+					     $("#p1").css("background-color","yellow").css("color","blue");
+						 $("#p2").css("background-color","green");
+						 $("#p3").css("color","red");
+					  });
+				});
+			 </script>
+			 </head>
+			 <body>
+			 <p id="p1"> This is the first paragraph </p>
+			 <p id="p2">This is the second paragraph</p>
+			 <p id="p3">This is the third paragraph</p>
+			 
+			 <button id="b1">Show the property</button>
+			 <button id="b2">Set the property</button>
+			
+			 </body>
+			 </html>

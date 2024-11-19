@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+        <html>
+		    <head>
+             <title>Jquery Trversing</title>
+			 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+			 </script>
+			 <style>
+			     #outer *{display:block;
+				         border:3px solid grey;
+						 color:green;
+						 padding:6px;
+						 margin:20px;
+				 }
+			 </style>
+			 
+			 <script>
+			 $(document).ready(function(){
+			     $("#b1").click(function(){
+				  $("span").parent().css({"color":"blue","border":"3px solid blue"});
+				 });
+				 $("#b2").click(function(){
+				  $("span").parents().css({"color":"blue","border":"3px solid blue"});
+				 });
+				 $("#b3").click(function(){
+				  $("span").parentsUntil("div").css({"color":"red","border":"3px solid red"});
+				 });
+				 $("#b4").click(function(){
+				  $("li").children().css({"color":"violet","border":"3px solid violet"});
+				 });
+				 $("#b5").click(function(){
+				  $("div").find("span").css({"color":"violet","border":"3px solid violet"});
+				 });
+			 });
+			 </script>
+			 </head>
+			 <body id="outer">body(great-great grand parent)
+			   <div> div(great-grand parent)
+			        <ul> ul (grand parent)
+					   <li> li (direct parent)
+					       <span> span1 (child1) </span>
+						   <span> span2 (child2) </span>
+					  
+					   </li>
+					</ul>
+			   </div>
+			   <button id="b1">parent</button>
+			   <button id="b2">parents</button>
+			   <button id="b3">parentsUntil</button>
+			   <button id="b4">children</button>
+			   <button id="b5">find</button>
+			 </body>
+			 </html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+        <html>
+		    <head>
+             <title>Jquery addition of elements</title>
+			 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+			 </script>
+			 <script>
+			 $(document).ready(function(){
+			   $("#b1").click(function(){
+			      $("p").append("<b>New content using append </b>");
+			   });
+			    $("#b2").click(function(){
+			      $("p").prepend("<b>New content using prepend </b>");
+			   });
+			   $("#b3").click(function(){
+			      $("ul").append("<li> Soup </li>");
+			   });
+			   $("#b4").click(function(){
+			      $("ul").prepend("<li> Juice </li>");
+			   });
+			   $("#b5").click(function(){
+			      $("p").after("Adding paragraph after");
+			   });
+			   $("#b6").click(function(){
+			      $("p").before("Adding paragraph before");
+			   });
+			 });
+			 </script>
+			 </head>
+			 <body>
+			 <p>This is first paragraph </p>
+			 <p>This is second paragraph</p>
+			 
+			 <ul>
+			   <li>Cofee</li>
+			   <li>Tea</li>
+			   <li>Water</li>
+			   </ul>
+			   <button id="b1">Append paragraph </button>
+			    <button id="b2">Prepend paragraph </button> <br><br>
+				<button id="b3">Append list </button>
+				<button id="b4">Prepend list </button><br><br>
+				<button id="b5">After paragraph </button>
+			    <button id="b6">Before paragraph </button> <br><br>
+				
+			   
+			 </body>
+			 </html>

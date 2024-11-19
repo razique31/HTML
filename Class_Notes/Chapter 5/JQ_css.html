@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+        <html>
+		    <head>
+             <title>Jquery CSS</title>
+			 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+			 </script>
+			 <script>
+			 $(document).ready(function(){
+			     $("#b1").click(function(){
+				     $("h1,h2,p").addClass("red bg");
+					 $("p").addClass("size");
+				 });
+				 $("#b2").click(function(){
+				     $("h1,h2,p").removeClass("red");
+					 $("p").removeClass("par");
+				 });
+				 $("#b3").click(function(){
+				     $("h1,h2,p").toggleClass("red size");
+					 //$("p").removeClass("par");
+				 });
+				 
+			 });
+			 </script>
+			 <style>
+			     .red{
+				      color:red;
+					  }
+				  .par{
+				      color:blue;
+					  }
+				  .size{
+				    font-size:2em;
+					}
+					.bg{
+					 background-color:yellow;
+					 }
+					  
+			 </style>
+			 </head>
+			 <body>
+			 <h1> This is the first heading </h1>
+			 <h2> This is the second heading </h2>
+			 <p> This is the first paragraph </p>
+			 <p class="par">This is the second paragraph</p>
+			 
+			 <button id="b1">addClass</button>
+			 <button id="b2">removeClass</button>
+			 <button id="b3">toggleClass</button>
+			 </body>
+			 </html>

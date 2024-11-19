@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+        <html>
+		    <head>
+             <title>jquery events</title>
+			 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+			 </script>
+			 <script>
+			    $(document).ready(function(){
+				    $("h1").click(function(){
+					  $(this).hide();
+					  });
+					$("h2,h3").dblclick(function(){
+					  $(this).hide();
+					  });
+					//$(".cls1").mouseenter(function(){
+					  // alert("This event will be executed when the user enters the mouse to the HTML element");
+				     //});
+					$("#par").mouseleave(function(){
+					 alert("You left the paragraph element!");
+					 });
+				});
+			 </script>
+			 </head>
+			 <body>
+			 <h1> First heading </h1>
+			 <h2> Second heading </h2>
+			 <h3> Third heading </h3>
+			 <h2 class="cls1"> Example of mouseenter event </h2>
+			 <p class="cls1"> Take the cursor to the html element </p>
+			 <p id="par">Example of mouseleave event </p>
+			 </body>
+			 </html>

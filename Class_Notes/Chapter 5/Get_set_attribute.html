@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+        <html>
+		    <head>
+             <title>jquery DOM Manipulation</title>
+			 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+			 </script>
+			 <script>
+			 $(document).ready(function(){
+			    $("#btn1").click(function(){
+				   alert($("#link").attr("href"));
+				});
+				$("#btn2").click(function(){
+				   $("#link").attr("href","https://www.soa.ac.in");
+				});
+				$("#btn3").click(function(){
+				   alert($("#image").attr("src"));
+				});
+				$("#btn4").click(function(){
+				   $("#image").attr("src","img_tree.gif");
+				});
+			 
+			 });
+			 </script>
+			 </head>
+			 <body>
+			 <p><a href="https://www.google.com" id="link" > Google Link </a></p>
+			 
+			 <p><img src="iter.png" id="image" height="100px" width="100px" alt="Soa logo"></p>
+             <button id="btn1">Display attribute value </button><br>
+			  <button id="btn2">Set attribute value </button><br>
+			  
+			  <button id="btn3">Show the image src</button><br>
+			  <button id="btn4">Change the image src </button><br>
+			 
+			 </body>
+			 </html>

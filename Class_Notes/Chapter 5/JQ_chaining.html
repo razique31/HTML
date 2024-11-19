@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+        <html>
+		    <head>
+             <title>jquery Fading Effect</title>
+			 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+			 </script>
+			 <script>
+			   $(document).ready(function(){
+				$(".key").mouseenter(function(){
+					$(".key").css("background-color","red").css("color","blue")
+					.css("font-size","2em");
+					//$(".key").css("color","blue");
+					//$(".key").css("font-size","2em");
+				});
+				$(".key").mouseleave(function(){
+					$(".key").css("background-color","yellow").css("color","red")
+					.css("font-size","1em");
+				});
+			   });
+			 </script>
+			 </head>
+			 <body>
+				<h1 class="key"> This is heading 1.</h1>
+				<h2 class="key"> This is heading 2.</h2>
+				<p class="key"> This is a paragraph. </p>
+				<p class="key"> This is another paragraph.</p>
+				
+				
+			 </body>
+			 </html>

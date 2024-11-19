@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+        <html>
+		    <head>
+             <title>jquery Fading Effect</title>
+			 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+			 </script>
+			 <script>
+			    $(document).ready(function(){
+				   $("#btn1").dblclick(function(){
+				      $("#div1").fadeIn(2000);
+					  $("#div2").fadeIn(4000);
+				      $("#div3").fadeIn(6000);
+					  });
+					$("#btn2").click(function(){
+				      $("#div1").fadeOut(2000);
+					  $("#div2").fadeOut(4000);
+				      $("#div3").fadeOut(6000);
+					  });
+					 $("#btn3").click(function(){
+					      $("#div1").fadeToggle(2000);
+					      $("#div2").fadeToggle(4000);
+				          $("#div3").fadeToggle(6000);
+						  });
+				});
+			 </script>
+			 </head>
+			 <body>
+			  <h2> Example of fading methods </h2>
+			  <div id="div1" style="width:70px;height:70px;display:none;background-color:yellow;"></div><br>
+			  <div id="div2" style="width:70px;height:70px;display:none;background-color:red;"></div><br>
+			  <div id="div3" style="width:70px;height:70px;display:none;background-color:blue;"></div><br>
+			  <br> 
+			  <button id="btn1"> FadeIn </button>
+			   <button id="btn2"> FadeOut </button>
+			   <button id="btn3"> fadeToggle </button>
+			 </body>
+			 </html>

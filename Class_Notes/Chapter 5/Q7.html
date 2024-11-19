@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+        <html>
+		    <head>
+             <title>Jquery CSS</title>
+			 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+			 </script>
+			 <script>
+			 $(document).ready(function(){
+			    $("#b1").click(function(){
+				var name=$("#sname").val();
+				var roll=$("#sroll").val();
+				var mark=$("#smark").val();
+				var data="<tr><td>"+name+"</td><td>"+roll+"</td><td>"+mark+"</td></tr>";
+				$("table").append(data);
+				});
+				 $("#b2").click(function(){
+				 $("table tbody tr:last-child").remove();
+				 });
+				 $("#b3").click(function(){
+				 $("table td").css("color","red");
+				 });
+				 
+			 
+			 });
+			 </script>
+			 </head>
+			 <body>
+			 <input type="text" id="sname" name="sname" placeholder="Enter name"> <br>
+			 <input type="text" id="sroll" name="sroll" placeholder="Enter roll"><br>
+             <input type="text" id="smark" name="smark" placeholder="Enter mark"><br>
+             <button id="b1">Add Row</button>
+ 			 <button id="b2">Delete Row</button>
+			 <button id="b3">Change Color</button>
+			 <table style="width:70%; background-color:lightblue; border:2px solid red; border-collapse:collapse" cellpadding="10">
+			 <caption><b> Report card </b></caption>
+			 <thead>
+			 <tr>
+			     <th> Name </th>
+				 <th> Roll </th>
+				 <th> Mark </th>
+		     </tr>
+			 </thead>
+			 <tbody>
+			 <tr>
+			      <td> Arun </td>
+				  <td> 10 </td>
+				  <td> 80 </td>
+			</tr>
+			</tbody>
+			
+			 </table>
+			 </body>
+			 </html>

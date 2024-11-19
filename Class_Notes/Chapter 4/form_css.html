@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+        <html>
+           <head>
+             <title>Dropdown</title>
+			 <style>
+			    div{
+				 border:2px solid black;
+				 background-color:yellow;
+				 padding:10px;
+				 }
+				 input[type=text],select,textarea{
+				  width:200px;
+				  padding:10px 16px;
+				  margin:6px;
+				  display:inline-block;
+				  border:3px solid blue;
+				 }
+				 input[type=submit]{
+				
+				 text-align:center;
+				 width:100px;
+				 padding:10px 16px;
+				 margin:6px;
+				 background-color:orange;
+				 }
+				 input[type=radio]{
+				 width:20px;
+				 height:20px;
+				 margin:10px;
+				 }
+				 input[type=submit]:hover,
+				 input[type=text]:hover,
+				 select:hover,
+				 textarea:hover{
+				 background-color:lightgreen;
+				 }
+				 input[type=text]:focus,
+				 select:focus,
+				 textarea:focus{
+				 background-color:lightblue;
+				 }
+			 </style>
+			 </head>
+			 <body>
+			 <div>
+			 <form action="/action_page.php">
+			 <label for="ename"> Employee Name: </label>
+			 <input type="text" id="ename" name="emp_name" placeholder="Enter Emp. name">
+			 <br>
+			 <label for="dept"> Department: </label>
+			 <input type="text" id="dept" name="department" placeholder="Enter the department">
+			 <br>
+			 <label for="city"> City </label>
+			 <select id="city" name="city_name">
+			 <option value="bbsr">Bhubaneswar </option>
+			 <option value="ctc">Cuttack </option>
+			 <option value="puri">Puri </option>
+			 </select>
+			 
+			 <br>
+			 <input type="radio" id="rad" name="gender" value="male">
+			 <label for="rad">Male </label>
+			 <input type="radio" id="rad1" name="gender" value="female">
+			 <label for="rad1">Female </label>
+			 <br>
+			 <label for="comm">Comment Box </label>
+			 <textarea id="comm" name="comment" rows="4" cols="10">
+			 </textarea>
+			 <br>
+			 <input type="submit" value="Confirm">
+			 </form>
+			 </div>
+			 </body>
+			 </html>

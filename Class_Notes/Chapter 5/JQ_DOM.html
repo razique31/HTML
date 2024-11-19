@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+        <html>
+		    <head>
+             <title>jquery DOM</title>
+			 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+			 </script>
+			 <script>
+			 $(document).ready(function(){
+			   $("#b1").click(function(){
+			     alert("innerHTML =" +n.innerHTML);
+			   });
+			   $("#b2").click(function(){
+			     alert("textContent =" +n.textContent);
+			   });
+			   $("#b3").click(function(){
+			     alert("nodeName =" +n.nodeName);
+			   });
+			   $("#b4").click(function(){
+			     alert("nodeValue =" +n.nodeValue);
+				  alert("childNode =" +n.childNodes.length);
+				   alert("nodeName of child 0 =" +n.childNodes[0].nodeName);
+				   alert("nodeValue of child 0 =" +n.childNodes[0].nodeValue);
+				   alert("nodeName of child 1 =" +n.childNodes[1].nodeName);
+				   alert("nodeValue of child 1 =" +n.childNodes[1].nodeValue);
+			   });
+			   $("#b5").click(function(){
+			     alert("parent nodeName =" +n.parentNode.nodeName);
+				 alert("parent nodeValue =" +n.parentNode.nodeValue);
+			   });
+			   $("#b6").click(function(){
+				   alert("Attribute 0 Name =" +n.attributes[0].nodeName);
+				   alert("Attribute0 value =" +n.attributes[0].nodeValue);
+				   alert("Attribute1 Name =" +n.attributes[1].nodeName);
+				   alert("Attribute1 Value =" +n.attributes[1].nodeValue);
+			   });
+			 });
+			 </script>
+			 </head>
+			 <body>
+			 <a id="n" href="www.mayurramgir.com">Mayur Ramgir<b>Author</b></a>
+			 <br> <br>
+			  
+			 <button id="b1">inner HTML property </button><br>
+			  <button id="b2">text content property </button><br>
+			   <button id="b3">node name property </button><br>
+			   <button id="b4">node value property </button><br>
+			   <button id="b5">parent node property </button><br>
+			   <button id="b6">Attribute property </button><br>
+			 
+			 </body>
+			 </html>
